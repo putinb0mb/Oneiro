@@ -12,7 +12,7 @@ const SavedDreams = ({ dreamsProp }) => {
         const token = localStorage.getItem('token')
         if (!token) throw new Error('No token found')
 
-        const res = await fetch('http://localhost:5000/api/dreams', {
+        const res = await fetch('https://oneiro-iou7.onrender.com/api/dreams', {
           headers: { Authorization: `Bearer ${token}` },
         })
 

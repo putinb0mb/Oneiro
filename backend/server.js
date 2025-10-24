@@ -28,6 +28,10 @@ app.use(express.json())
 // ✅ Connect DB first
 connectDB()
 
+app.get('/', (req, res) => {
+  res.send('🌙 Oneiro backend is live and running!');
+});
+
 // ✅ Dynamically import routes *after* dotenv is loaded
 const loadRoutes = async () => {
   const { default: authRoutes } = await import('./routes/authRoutes.js')

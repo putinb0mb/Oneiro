@@ -10,7 +10,7 @@ export default function DreamInput({ onDecoded, token }) {
     setLoading(true)
     try {
       const res = await axios.post(
-        'http://localhost:5000/api/dreams',
+        'https://oneiro-iou7.onrender.com/api/dreams',
         { text: dream },
         { headers: { Authorization: `Bearer ${token}` } }
       )

@@ -21,7 +21,7 @@ export default function App() {
   const fetchDreams = async () => {
     if (!token) return
     try {
-      const res = await axios.get('http://localhost:5000/api/dreams', {
+      const res = await axios.get('https://oneiro-iou7.onrender.com/api/dreams', {
         headers: { Authorization: `Bearer ${token}` },
       })
       // Extract the dreams array from response

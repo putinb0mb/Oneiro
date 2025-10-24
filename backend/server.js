@@ -18,7 +18,7 @@ const app = express()
 // ✅ Middleware
 app.use(
   cors({
-    origin: '*',
+    origin: 'https://oneiro-app.netlify.app',
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true,
   })
